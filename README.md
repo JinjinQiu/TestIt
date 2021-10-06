@@ -23,7 +23,7 @@ A line item defines an ad product, budget, targeting, rate type, pacing, and bid
 
 **Campaign**
 | Field | Description |
-| -----:|:-----------:|
+| :------:|:------:|
 |id	| string		|
 |status| Statues of the campaign, possible states: DRAFT, READY, DELIVERING, COMPLETE, PAUSED|
 |create_date_time	| Creating date and time for the campaign|
@@ -39,7 +39,7 @@ A line item defines an ad product, budget, targeting, rate type, pacing, and bid
 
 **Line item**
 | Field | Description |
-| :------:|:------:|
+| -----:|:-----------:|
 |id	|  |
 |campaign_id|	Campaign id this line item belong to.|
 |status|	Statues of the line item, possible states: DRAFT, READY, DELIVERING, COMPLETE, PAUSED|
@@ -57,7 +57,7 @@ A line item defines an ad product, budget, targeting, rate type, pacing, and bid
 
 **Rate type**
 | Field | Description |
-| :------:|:------:|
+|:-----:|:-----------:|
 | pricing_model|Could be COST_PER_CLICK, COST_PER_ACTION, COST_PER_MILLE |
 | spend_limit|Up limit of the total spend for the line item |
 |bid | See bid structure|
@@ -65,19 +65,19 @@ A line item defines an ad product, budget, targeting, rate type, pacing, and bid
 
 **Ad product**
 | Field | Description |
-| :------:|:------:|
+|:-----:|:-----------:|
 | ad_product_type | Could be PERFORMANCE, PERFORMANCE_LINKOFF, MARQUEE. |
 | advertised_item | Refers to what the advertiser is using MeSo to promote |
 
 **Advertised item**
 | Field | Description |
-| :------:|:------:|
+|:-----:|:-----------:|
 | product_type | The type of product included in the sponsored content, such as LODGING, AIR, CAR, CRUISE, ACTIVITIES |
 |id | TODO: this assumes each piece of inventory can be represented by a single id, not true today |
 
 **Creative**
 | Field | Description |
-| :------:|:------:|
+|:-----:|:-----------:|
 | id | |
 | target | |
 | targeting| |
@@ -87,20 +87,20 @@ A line item defines an ad product, budget, targeting, rate type, pacing, and bid
 
 **Pace**
 | Field | Description |
-| :------:|:------:|
+|:-----:|:-----------:|
 | time_span | Time span could be DAILY, WEEKLY, MONTHLY |
 | strategy | Pacing strategy could be EVENLY or IMMEDIATE |
 | amount | Pacing should based on amount of spend limit. |
 
 **Bid**
 | Field | Description |
-| :------:|:------:|
+|:-----:|:-----------:|
 | bid  | Represents an amount of money with its currency type. |
 | bid_enhancers| A bid can have 0 or many bid enhancers |
 
 **Bid enhancer** 
 | Field | Description |
-| :------:|:------:|
+|:-----:|:-----------:|
 |id | |
 |amount | Represents an amount of money with its currency type for the bid enhancer. |
 | target | |
@@ -109,7 +109,7 @@ A line item defines an ad product, budget, targeting, rate type, pacing, and bid
 
 **Target** 
 | Field | Description |
-| :------:|:------:|
+|:-----:|:-----------:|
 |id | |
 | inclusive | true=inclusive (=) false=exclusive (not !=) For example - Inclusive: include a pool. Exclusive: no kid |
 | line_item | See TargetLineItem structure |
@@ -123,7 +123,7 @@ A line item defines an ad product, budget, targeting, rate type, pacing, and bid
 
 **TargetGroup**
 | Field | Description |
-| :------:|:------:|
+|:-----:|:-----------:|
 | operator |  |
 | target_1 | A single target |
 | target_group_1 | A group of targets connected by a logical opererator |
@@ -135,7 +135,7 @@ A line item defines an ad product, budget, targeting, rate type, pacing, and bid
 **TargetLineItem**
 Used for day parting, scheduled ads
 | Field | Description |
-| :------:|:------:|
+|:-----:|:-----------:|
 | date_start | |
 | date_end | |
 | time_start | |
@@ -144,7 +144,7 @@ Used for day parting, scheduled ads
 
 **TargetList**
 | Field | Description |
-| :------:|:------:|
+|:-----:|:-----------:|
 | operator | Logical operator: AND, OR, CONTAINS |
 | targets | one or more target|
 
