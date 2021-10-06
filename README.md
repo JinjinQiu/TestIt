@@ -23,7 +23,7 @@ A line item defines an ad product, budget, targeting, rate type, pacing, and bid
 
 **Campaign**
 | Field | Description |
-| :------:|:------:|
+| :------|:------|
 |id	| string		|
 |status| Statues of the campaign, possible states: DRAFT, READY, DELIVERING, COMPLETE, PAUSED|
 |create_date_time	| Creating date and time for the campaign|
